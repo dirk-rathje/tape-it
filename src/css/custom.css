@@ -1,0 +1,135 @@
+/*
+Theme Name: Worthy - Free Powerful Theme by HtmlCoder
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Version:1.0.0
+Created:November 2014
+License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
+File Description: Place here your custom CSS styles
+*/
+
+
+.navbar {
+        text-transform: uppercase;
+
+}
+
+
+
+.orange {
+    color: #ff931e;
+}
+.blue {
+    color: #3fa9f5;
+}
+.green {
+    color: #4fce00;
+}
+
+.note {
+    color: #4fce00;
+}
+
+.score-animation {
+    font-size: 80px;
+    color: #ccc;
+
+}
+
+.main-navigation .navbar-default .navbar-nav > li > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a {
+    color: #4fce00;
+
+}
+
+
+.header__score {
+    font-size: 40px;
+    color: #ccc;
+
+}
+
+
+.subtitle  {
+    background-color: #4fce00;
+    padding: 5px;
+    font-weight: normal;
+    display: inline-block;
+
+
+}
+
+
+h1.title {
+
+
+}
+
+#btn-yes, #btn-no {
+
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+
+}
+
+
+.ball {
+
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+
+.ball--baseball {
+    background: url(../images/baelle-100px/baseball.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--fussball {
+    background: url(../images/baelle-100px/fussball.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+
+.ball--basketball {
+    background: url(../images/baelle-100px/basketball.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--billardkugel {
+    background: url(../images/baelle-100px/billardkugel.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--bowlingkugel {
+    background: url(../images/baelle-100px/bowlingkugel.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--football {
+    background: url(../images/baelle-100px/football.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--fussball {
+    background: url(../images/baelle-100px/fussball.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--golfball {
+    background: url(../images/baelle-100px/golfball.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--tennisball {
+    background: url(../images/baelle-100px/tennisball.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+.ball--volleyball {
+    background: url(../images/baelle-100px/volleyball.png) 50% 50%  no-repeat;
+    background-size: 20px 20px;
+}
+
+
+h1, h2, h3, h4, p {
+    margin: 0px;
+}
+h1, h2, p {
+    margin-bottom: 22.5px;
+}
