@@ -83,7 +83,7 @@ function initialize() {
 
         for (var key in projectTextUrls) {
 
-            readGoogleDoc(key, projectTextUrls[key]);
+            // readGoogleDoc(key, projectTextUrls[key]);
 
         }
 

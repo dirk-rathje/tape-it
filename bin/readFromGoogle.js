@@ -1,0 +1,3 @@
+#!jjs
+
+echo "XXXX";
