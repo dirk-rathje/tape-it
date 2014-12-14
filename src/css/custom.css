@@ -80,7 +80,12 @@ h1.title {
     width: 20px;
     height: 20px;
     display: inline-block;
+    cursor: pointer;
 
+}
+
+.ball--hit {
+    opacity: 0.2;
 }
 
 
