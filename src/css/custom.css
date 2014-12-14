@@ -24,6 +24,8 @@ File Description: Place here your custom CSS styles
 }
 .green {
     color: #4fce00;
+
+    //rbg(79,206,0);
 }
 
 .note {
@@ -44,10 +46,14 @@ File Description: Place here your custom CSS styles
 }
 
 
-.header__score {
+.header__score-body {
     font-size: 40px;
     color: #ccc;
+    line-height: 22px;
+}
 
+.header__score-body, .header__score-label {
+    margin: 0;
 }
 
 
@@ -66,12 +72,22 @@ h1.title {
 
 }
 
-#btn-yes, #btn-no {
+#btn-registration-coming, #btn-registration-not-coming {
 
     margin: 10px;
     width: 300px;
     height: 100px;
+    background-color: transparent;
+    border-width: 5px;
+    color: black;
+}
 
+#btn-registration-not-coming.btn--active {
+    background-color: rgb(212, 63, 58);
+}
+
+#btn-registration-coming.btn--active {
+    background-color: #4fce00;
 }
 
 
@@ -137,4 +153,66 @@ h1, h2, h3, h4, p {
 }
 h1, h2, p {
     margin-bottom: 22.5px;
+}
+
+.overlay {
+    background-color: rgba(79,206,0,0.5);
+
+
+}
+
+.overlay-container .btn {
+    background-color: rgb(79,206,0) !important;
+
+}
+
+
+time.icon
+{
+    font-size: 1em; /* change icon size */
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 5em;
+    height: 5.5em;
+    background-color: #fff;
+    border-radius: 0.1em;
+    box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff,  0 4px 0 #fff,  0 0 0 1px #bdbdbd;
+    overflow: hidden;
+}
+time.icon *
+{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+time.icon strong
+{
+    position: absolute;
+    top: 0;
+    padding: 0.4em 0;
+    font-size: 13px;
+    color: #fff;
+    background-color: #4fce00;
+    border-bottom: 1px dashed #f37302;
+    box-shadow: 0 2px 0 #fd9f1b;
+}
+time.icon em
+{
+    position: absolute;
+    font-size: 13px;
+
+    bottom: 0.3em;
+    color: #4fce00;
+}
+time.icon span
+{
+    font-size: 30px;
+    letter-spacing: -0.05em;
+    padding-top:1em;
+    color: #4fce00;
+    font-weight: bold;
 }
