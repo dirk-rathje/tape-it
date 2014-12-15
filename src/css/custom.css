@@ -29,7 +29,7 @@ File Description: Place here your custom CSS styles
 }
 
 .note {
-    color: #4fce00;
+    color: #45af00;
 }
 
 .score-animation {
@@ -45,6 +45,9 @@ File Description: Place here your custom CSS styles
 
 }
 
+.teamAssociation {
+    display: none;
+}
 
 .header__score-body {
     font-size: 40px;

@@ -42,6 +42,8 @@ function createGuestUser() {
     watchCurrentGuestHits();
     $(".currentGuestHitCount").html("0");
 
+    $(".teamAssociation--teamless").show();
+
 }
 
 
@@ -141,6 +143,8 @@ function initialize() {
                 if (guest !== null) {
 
                     currentGuestTeam = guest.team;
+                    console.log(".teamAssociation--" + currentGuestTeam);
+                    $(".teamAssociation--" + currentGuestTeam).show();
 
                     userIsInvited = true;
                     $(".currentGuestId").html(currentGuestId);
