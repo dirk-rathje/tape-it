@@ -24,19 +24,28 @@ File Description: Place here your custom CSS styles
     box-shadow:         0px 0px 25px 0px rgba(255, 255, 255,  0.76);
 
 
-    width: 450px;
+    width: 350px;
 
 }
 
 #subtitle-1 {
+
     -webkit-transform: rotateZ(.2deg);
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px;
+}
+p.logo-wrapper  {
+    margin-bottom: 10px;
 }
 #subtitle-2 {
     -webkit-transform: rotateZ(-.2deg);
 }
 
 
-
+.bg-white {
+    background-image: url(images/white.gif);
+}
 
 
 .orange {
@@ -55,6 +64,9 @@ File Description: Place here your custom CSS styles
 
     background-color:  #4fce00;
     color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+
 }
 
 .score-animation {
@@ -62,6 +74,11 @@ File Description: Place here your custom CSS styles
     color: #ccc;
 
 }
+
+#tubular-container {
+    z-index: -100 !important;
+}
+
 
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover,
@@ -185,7 +202,9 @@ h1, h2, p {
 
 .overlay {
     background-color: rgba(79,206,0,0.85);
-
+}
+.overlay span {
+    font-size: 16px;
 }
 
 .modal-body h3 {
@@ -263,4 +282,17 @@ time.icon span
     padding-top:1em;
     color: #4fce00;
     font-weight: bold;
+}
+
+
+.registration--logged-in {
+    opacity: 0.2;
+}
+.logged-in .registration--logged-in {
+    opacity: 1;
+}
+
+.section {
+
+    margin-bottom: 150px;
 }
