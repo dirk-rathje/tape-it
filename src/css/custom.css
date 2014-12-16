@@ -16,11 +16,15 @@ File Description: Place here your custom CSS styles
 
 #logo_solo {
 
-    -webkit-box-shadow: 0px 0px 3px 15px #f2e1f2;
-    -moz-box-shadow: 0px 0px 3px 15px #f2e1f2;
-    box-shadow: 0px 0px 3px 15px #f2e1f2;
     margin: 0 auto;
-    width: 75%;
+
+
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.76);
+    -moz-box-shadow:    0px 0px 25px 0px rgba(255, 255, 255, 0.76);
+    box-shadow:         0px 0px 25px 0px rgba(255, 255, 255,  0.76);
+
+
+    width: 300px;
 
 }
 
