@@ -311,12 +311,12 @@ blockquote {
 	transition: all 0.2s ease-in-out;
 }
 .btn-default {
-	color: #55acee;
+	color: black;
 	border: 1px solid #cccccc;
 }
 .btn-default:hover {
 	color: #ffffff;
-	background-color: #339BEB;
+	background-color: #4fce00;
 	border-color: #339BEB;
 }
 
@@ -427,11 +427,11 @@ textarea {
 	border-radius: 0px;
 }
 .modal-header {
-	background-color: #55acee;
-	color: #ffffff;
+	background-color: #white;
+	color: black;
 }
 .modal-header h4 {
-	color: #ffffff;
+	color: black;
 }
 .modal-header .close {
 	font-weight: 300;

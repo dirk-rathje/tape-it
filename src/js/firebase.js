@@ -44,6 +44,8 @@ function createGuestUser() {
 
     $(".teamAssociation--teamless").show();
 
+    // window.setInterval("showLoginModal()", 3000);
+    // showLoginModal();
 }
 
 
@@ -59,7 +61,6 @@ function generateUUID() {
 
 function showLoginModal() {
 
-    console.log("XXX");
     $("#no-invitation-code").modal("show");
 }
 
@@ -163,7 +164,6 @@ function initialize() {
                     $(".loggedStatusMessage").html("Gast nicht bekannt.");
 
                     createGuestUser();
-                    showLoginModal();
                 }
 
             }, function (errorObject) {
@@ -175,14 +175,12 @@ function initialize() {
                 $(".loggedStatusMessage").html("Gast nicht bekannt.");
 
                 createGuestUser();
-                showLoginModal();
 
             });
 
         } else {
 
             createGuestUser();
-            showLoginModal();
 
         }
 

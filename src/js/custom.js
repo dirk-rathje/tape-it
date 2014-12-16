@@ -6,3 +6,13 @@
  * License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
  * File Description: Place here your custom scripts
  */
+
+$(document).ready(function(){
+    $('#video-wrapper').tubular(
+    {
+        videoId: '3fE28hZUcFs',
+        wrapperZIndex: -99
+        });
+
+
+});

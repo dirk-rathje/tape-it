@@ -24,9 +24,20 @@ File Description: Place here your custom CSS styles
     box-shadow:         0px 0px 25px 0px rgba(255, 255, 255,  0.76);
 
 
-    width: 300px;
+    width: 450px;
 
 }
+
+#subtitle-1 {
+    -webkit-transform: rotateZ(.2deg);
+}
+#subtitle-2 {
+    -webkit-transform: rotateZ(-.2deg);
+}
+
+
+
+
 
 .orange {
     color: #ff931e;
@@ -41,7 +52,9 @@ File Description: Place here your custom CSS styles
 }
 
 .note {
-    color: #45af00;
+
+    background-color:  #4fce00;
+    color: white;
 }
 
 .score-animation {
@@ -171,10 +184,30 @@ h1, h2, p {
 }
 
 .overlay {
-    background-color: rgba(79,206,0,0.5);
+    background-color: rgba(79,206,0,0.85);
+
+}
+
+.modal-body h3 {
+
+    font-size: 18px;
+    font-weight: bold;
 
 
 }
+.section {
+    background-color: white;
+}
+.section a {
+    color: #888;
+    text-decoration: underline;
+}
+.section a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
 
 .overlay-container .btn {
     background-color: rgb(79,206,0) !important;
