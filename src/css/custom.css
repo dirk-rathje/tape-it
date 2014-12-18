@@ -84,6 +84,8 @@ p.logo-wrapper  {
 .main-navigation .navbar-default .navbar-nav > li.active > a:hover,
 .main-navigation .navbar-default .navbar-nav > li.active > a {
     color: #4fce00;
+    padding-left: 0px;
+    padding-right: 30px;
 
 }
 
