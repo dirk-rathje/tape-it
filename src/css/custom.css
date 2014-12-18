@@ -94,7 +94,7 @@ p.logo-wrapper  {
 .header__score-body {
     font-size: 40px;
     color: #ccc;
-    line-height: 22px;
+    line-height: 35px;
 }
 
 .header__score-body, .header__score-label {
@@ -112,15 +112,18 @@ p.logo-wrapper  {
 }
 
 
-h1.title {
+.fixed-header-on .navbar-default .navbar-nav > li > a {
 
-
+    padding-left: 0px;
+    padding-right: 30px;
 }
+
+
 
 #btn-registration-coming, #btn-registration-not-coming {
 
     margin: 10px;
-    width: 300px;
+    width: 250px;
     height: 100px;
     background-color: transparent;
     border-width: 5px;
@@ -217,12 +220,17 @@ h1, h2, p {
 .section {
     background-color: white;
 }
-.section a {
+a {
     color: #888;
+}
+.section a {
     text-decoration: underline;
 }
-.section a:hover {
+a:hover {
     color: #000;
+}
+
+.section a:hover {
     text-decoration: underline;
 }
 
@@ -230,7 +238,10 @@ h1, h2, p {
 
 .overlay-container .btn {
     background-color: rgb(79,206,0) !important;
+}
 
+.image-box a {
+    text-decoration: none;
 }
 
 
