@@ -143,10 +143,11 @@ p.logo-wrapper  {
 
 .ball {
 
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     display: inline-block;
     cursor: pointer;
+    margin-bottom: -1px;
 
 }
 
@@ -156,45 +157,45 @@ p.logo-wrapper  {
 
 
 .ball--baseball {
-    background: url(../images/baelle-100px/baseball.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/baseball.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--fussball {
-    background: url(../images/baelle-100px/fussball.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/fussball.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 
 .ball--basketball {
-    background: url(../images/baelle-100px/basketball.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/basketball.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--billardkugel {
-    background: url(../images/baelle-100px/billardkugel.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/billardkugel.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--bowlingkugel {
-    background: url(../images/baelle-100px/bowlingkugel.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/bowlingkugel.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--football {
-    background: url(../images/baelle-100px/football.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/football.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--fussball {
-    background: url(../images/baelle-100px/fussball.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/fussball.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--golfball {
-    background: url(../images/baelle-100px/golfball.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/golfball.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--tennisball {
-    background: url(../images/baelle-100px/tennisball.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/tennisball.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 .ball--volleyball {
-    background: url(../images/baelle-100px/volleyball.png) 50% 50%  no-repeat;
-    background-size: 20px 20px;
+    background: url(../images/baelle-100px-ohne-schatten/volleyball.png) 50% 100%  no-repeat;
+    background-size: 16px 16px;
 }
 
 
