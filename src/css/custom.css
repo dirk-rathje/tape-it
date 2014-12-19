@@ -122,7 +122,9 @@ p.logo-wrapper  {
 
 
 
-#btn-registration-coming, #btn-registration-not-coming {
+#btn-registration-coming,
+#btn-registration-coming-plus-one,
+#btn-registration-not-coming {
 
     margin: 10px;
     width: 250px;
@@ -136,6 +138,7 @@ p.logo-wrapper  {
     background-color: rgb(212, 63, 58);
 }
 
+#btn-registration-coming-plus-one.btn--active,
 #btn-registration-coming.btn--active {
     background-color: #4fce00;
 }

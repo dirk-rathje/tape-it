@@ -85,6 +85,10 @@ function initialize() {
         $("#btn-registration-not-coming").on("click", function(event) {
             registration("not-coming");
         });
+        $("#btn-registration-coming-plus-one").on("click", function(event) {
+            console.log("XXX");
+            registration("coming-plus-one");
+        });
 
 
         $(".ball").each(function(key, value){
@@ -228,16 +232,21 @@ function watchCurrentGuestRegristration() {
 
         currentGuestRef.child("registration").on("value", function(snapshot) {
 
-            console.log(snapshot.val());
             if (snapshot.val() === "coming") {
 
+                $(".btn-registration ").removeClass("btn--active");
                 $("#btn-registration-coming").addClass("btn--active");
-                $("#btn-registration-not-coming").removeClass("btn--active");
+
+            }
+            if (snapshot.val() === "coming-plus-one") {
+
+                $(".btn-registration ").removeClass("btn--active");
+                $("#btn-registration-coming-plus-one").addClass("btn--active");
 
             }
             if (snapshot.val() === "not-coming") {
 
-                $("#btn-registration-coming").removeClass("btn--active");
+                $(".btn-registration").removeClass("btn--active");
                 $("#btn-registration-not-coming").addClass("btn--active");
 
             }
@@ -247,6 +256,7 @@ function watchCurrentGuestRegristration() {
     } else {
 
         $("#btn-registration-coming").disable();
+        $("#btn-registration-coming-plus-one").disable();
         $("#btn-registration-not-coming").disable();
 
     }
