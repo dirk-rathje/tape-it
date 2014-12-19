@@ -103,6 +103,11 @@ p.logo-wrapper  {
     margin: 0;
 }
 
+.header__score-label a.help {
+    padding-left: 5px;
+    font-size: 75%;
+}
+
 
 .subtitle  {
     background-color: #4fce00;
