@@ -33,7 +33,7 @@ function createGuestUser() {
 
 
     currentGuestId = generateUUID();
-    console.log(currentGuestId);
+    // console.log(currentGuestId);
     currentGuestRef = new Firebase("http://tape-it-hamburg.firebaseio.com/dev/guests/" + currentGuestId);
     currentGuestRef.child("hits").set(defaultHitsArray);
     userIsInvited = false;
@@ -86,7 +86,7 @@ function initialize() {
             registration("not-coming");
         });
         $("#btn-registration-coming-plus-one").on("click", function(event) {
-            console.log("XXX");
+            // console.log("XXX");
             registration("coming-plus-one");
         });
 
@@ -119,7 +119,7 @@ function initialize() {
 
             $.get("filme/" + director + ".html").success(function(response) {
 
-                console.log(".film-" + director + "__body");
+                //console.log(".film-" + director + "__body");
 
                 $(".film-" + director + "__body").html(response);
 
@@ -148,7 +148,7 @@ function initialize() {
                 if (guest !== null) {
 
                     currentGuestTeam = guest.team;
-                    console.log(".teamAssociation--" + currentGuestTeam);
+                    //console.log(".teamAssociation--" + currentGuestTeam);
                     $(".teamAssociation--" + currentGuestTeam).show();
 
                     userIsInvited = true;
@@ -174,7 +174,7 @@ function initialize() {
 
                 $(".loggedStatusMessage").html("Fehler: " + errorObject.code);
 
-                console.log("The read failed: " + errorObject.code);
+                //console.log("The read failed: " + errorObject.code);
 
                 $(".loggedStatusMessage").html("Gast nicht bekannt.");
 
@@ -226,7 +226,7 @@ function updateHitCount() {
 
 function watchCurrentGuestRegristration() {
 
-    console.log("watchCurrentGuestRegristration");
+    //console.log("watchCurrentGuestRegristration");
 
     if (userIsInvited) {
 
@@ -266,7 +266,7 @@ function watchCurrentGuestRegristration() {
 
 function watchCurrentGuestHitCount() {
 
-    console.log("watchCurrentGuestHitCount");
+    //console.log("watchCurrentGuestHitCount");
 
     if (userIsInvited) {
 
@@ -278,7 +278,7 @@ function watchCurrentGuestHitCount() {
 
         }, function (errorObject) {
 
-            console.log("The read failed: " + errorObject.code);
+            //console.log("The read failed: " + errorObject.code);
 
         });
     }
@@ -286,7 +286,7 @@ function watchCurrentGuestHitCount() {
 
 function watchCurrentGuestHits() {
 
-    console.log("watchCurrentGuestHits");
+    //console.log("watchCurrentGuestHits");
 
     currentGuestRef.on("value", function(snapshot) {
 
@@ -308,7 +308,7 @@ function watchCurrentGuestHits() {
 
     }, function (errorObject) {
 
-        console.log("The read failed: " + errorObject.code);
+        //console.log("The read failed: " + errorObject.code);
 
     });
 
@@ -319,7 +319,7 @@ function watchScore() {
 
     var scoreOrange, scoreBlue;
 
-    console.log("watchScore");
+    //console.log("watchScore");
 
     hitCountsRef.on("value", function(snapshot) {
 
@@ -327,7 +327,7 @@ function watchScore() {
         key,
         scoreOrange = 0;
 
-        console.log(hitCounts);
+        //console.log(hitCounts);
 
         for (key in hitCounts.orange) {
 
@@ -354,7 +354,7 @@ function watchScore() {
 
 function registration(value) {
 
-    console.log("registration: " + value);
+    //console.log("registration: " + value);
 
     currentGuestRef.child("registration").set(value);
 
@@ -362,7 +362,7 @@ function registration(value) {
 
 function toggleHit(hitId) {
 
-    console.log("toggleHit (hitId: " + hitId + ", guestId: " + currentGuestId + ")");
+    //console.log("toggleHit (hitId: " + hitId + ", guestId: " + currentGuestId + ")");
 
     currentGuestRef.child("hits").child(hitId).once("value", function(snapshot) {
 
@@ -378,11 +378,11 @@ function toggleHit(hitId) {
 
         updateHitCount();
 
-        console.log("new hit count for guest: " + currentGuestHitCount);
+        //console.log("new hit count for guest: " + currentGuestHitCount);
 
     }, function (errorObject) {
 
-        console.log("The read failed: " + errorObject.code);
+        //console.log("The read failed: " + errorObject.code);
 
     });
 }

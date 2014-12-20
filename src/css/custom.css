@@ -43,10 +43,6 @@ p.logo-wrapper  {
 }
 
 
-.bg-white {
-    background-image: url(images/white.gif);
-}
-
 
 .orange {
     color: #ff931e;
@@ -56,8 +52,6 @@ p.logo-wrapper  {
 }
 .green {
     color: #4fce00;
-
-    //rbg(79,206,0);
 }
 
 .note {

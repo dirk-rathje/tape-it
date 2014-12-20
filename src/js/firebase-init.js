@@ -109,7 +109,7 @@ function updateGuests() {
 
                     var row = result.data[rowItr];
 
-                    addNewGuest(row.id, row.team);
+                    addNewGuest(row.ident, row.team);
 
                 }
             }
