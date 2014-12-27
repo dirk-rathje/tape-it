@@ -420,6 +420,12 @@ function getReport() {
                         guest.registration = fbGuests[guest.ident].registration;
                         guest.hits = fbGuests[guest.ident].hits;
 
+                        guest.hitCount = 0;
+
+                        $.each(guest.hits,function() {
+                            guest.hitCount += this;
+                        });
+
                         guests.push(guest);
 
                     }
@@ -427,7 +433,7 @@ function getReport() {
                     for (var k in guests) {
 
                         var guest = guests[k],
-                        guestHTML = "<li>" + guest.Name + " " + guest.Nachname + " (" +guest.registration + ")</li>";
+                        guestHTML = "<li>" + guest.Name + " " + guest.Nachname + " (Bälle: " + guest.hitCount + ")</li>";
 
 
                         if (guest.registration === "coming") {
