@@ -399,9 +399,13 @@ function getReport() {
 
     Papa.parse(
 
-        "https://docs.google.com/spreadsheets/d/1-184_2Axar-YTlrybhsQLiByG0MMuftBWjYwTGK6JqI/export?format=csv", {
+        "/gaeste.csv", {
             download: true,
             header: true,
+
+            error: function(error) {
+                console.log(error);
+            },
 
             complete: function(result) {
 
