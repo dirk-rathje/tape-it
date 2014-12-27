@@ -4,7 +4,7 @@ userIsInvited = false,
 currentGuestTeam = "",
 currentGuestHitCount = 0,
 currentGuestHitCountRef = new Firebase("http://tape-it-hamburg.firebaseio.com/dev/hitCounts/" + currentGuestId + ""),
-guestRef = new Firebase("http://tape-it-hamburg.firebaseio.com/dev/guests"),
+guestRef =  new Firebase("http://tape-it-hamburg.firebaseio.com/dev/guests"),
 currentGuestRef,
 hitCountsRef = new Firebase("http://tape-it-hamburg.firebaseio.com/dev/hitCounts"),
 hitCountsOrangeRef = new Firebase("http://tape-it-hamburg.firebaseio.com/dev/hitCounts/orange"),
@@ -68,11 +68,11 @@ function showLoginModal() {
 
 function initialize() {
 
-    $.urlParam = function(name){
+    $.urlParam = function(name) {
         var results = new RegExp('[\?&amp;]' + name + '=([^&amp;#]*)').exec(window.location.href);
-        if (results != null)
-        return results[1];
-
+        if (results != null) {
+            return results[1];
+        }
         return 0;
     }
 
@@ -388,6 +388,72 @@ function toggleHit(hitId) {
 }
 
 
-
-
 initialize();
+
+
+var guests = [];
+
+
+function getReport() {
+
+
+    Papa.parse(
+
+        "https://docs.google.com/spreadsheets/d/1-184_2Axar-YTlrybhsQLiByG0MMuftBWjYwTGK6JqI/export?format=csv", {
+            download: true,
+            header: true,
+
+            complete: function(result) {
+
+                console.log("google sheet read.");
+
+                guestRef.once("value", function(snapshot) {
+
+                    console.log("guestRef read: " + guestRef);
+
+                    var fbGuests = snapshot.val();
+
+                    for (var rowItr in result.data) {
+
+                        var guest = result.data[rowItr];
+
+                        guest.registration = fbGuests[guest.ident].registration;
+                        guest.hits = fbGuests[guest.ident].hits;
+
+                        guests.push(guest);
+
+                    }
+
+                    for (var k in guests) {
+
+                        var guest = guests[k],
+                        guestHTML = "<li>" + guest.Name + " " + guest.Nachname + " (" +guest.registration + ")</li>";
+
+
+                        if (guest.registration === "coming") {
+
+                            $("ol.report-coming").append(guestHTML);
+
+                        } else if (guest.registration === "coming-plus-one") {
+
+                            $("ol.report-coming-plus-one").append(guestHTML);
+
+                        } else if (guest.registration === "not-coming") {
+
+                            $("ol.report-not-coming").append(guestHTML);
+
+                        } else {
+
+                            $("ol.report-no-registration").append(guestHTML);
+                        }
+
+                    }
+
+                });
+
+
+
+            }
+        }
+    );
+}
