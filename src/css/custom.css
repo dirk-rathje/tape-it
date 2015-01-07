@@ -228,7 +228,7 @@ h1, h2, p {
 a {
     color: #888;
 }
-a:hover {
+.bg-image-2 a:hover {
     color: #888;
 }
 .section a {
